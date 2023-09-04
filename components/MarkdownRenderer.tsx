@@ -54,7 +54,10 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
     (node: ReactNode, index: number) => {
       if (React.isValidElement(node)) {
         // Add the className to HTML tags as a prop
-        return React.cloneElement(node, { key: index, className });
+        return React.cloneElement(node as React.ReactElement, {
+          key: index,
+          className,
+        });
       } else if (typeof node === "string") {
         // Render Markdown content using ReactMarkdown with the className
         return (
