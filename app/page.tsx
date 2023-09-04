@@ -1,12 +1,17 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by clone&nbsp;
-          <code className="font-mono font-bold">https://github.com/deri-kurniawan/derhub.git</code>
+          Get started by visit&nbsp;
+          <a href="https://derhub.deri.my.id/deri-kurniawan">
+            <code className="font-mono font-bold">
+              https://derhub.deri.my.id/deri-kurniawan
+            </code>
+          </a>
+          &nbsp;or using your github username
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
@@ -15,8 +20,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
-            DerHub
+            By DerHub
           </a>
         </div>
       </div>
@@ -40,13 +44,14 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Getting Started{' '}
+            Getting Started{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            DerHub is a monorepo. To get started, clone the repo and run the app.
+            DerHub is a monorepo. To get started, clone the repo and run the
+            app.
           </p>
         </a>
 
@@ -57,13 +62,14 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Features{' '}
+            Features{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            User Authentication, Repositories Issues and Pull Requests, and more!
+            User Authentication, Repositories Issues and Pull Requests, and
+            more!
           </p>
         </a>
 
@@ -74,7 +80,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Technologies{' '}
+            Technologies{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -91,7 +97,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Contributing{' '}
+            Contributing{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -102,5 +108,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
